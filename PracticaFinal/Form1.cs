@@ -73,6 +73,11 @@ namespace Nomina_De_Empleado
             {
                 MessageBox.Show($"Problemas al modificar el empleado: {ex.Message}");
             }
+             //limpiamos texto 
+ txtID.Text = "";
+ txtApellido.Text = "";
+ txtNombre.Text = "";
+ txtSalario.Text = "";
         }
 
         // Codigo para buscar un empleado por ID
